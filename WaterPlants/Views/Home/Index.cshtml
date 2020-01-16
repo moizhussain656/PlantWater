@@ -1,0 +1,231 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Caring for Plants </title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+
+	</head>
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">
+	<nav class="fh5co-nav" role="navigation">
+		<div class="container-fluid">
+		
+			<div class="row">
+				<div class="col-xs-12 text-center menu-2">
+					<div id="fh5co-logo">
+						<h1>
+							<a href="index.html">
+							Caring <span>.</span>
+							<small>for Plants</small>
+							</a>
+						</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<aside id="fh5co-hero">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="flexslider animate-box">
+						<ul class="slides">
+					   	<li style="background-image: url(images/img_bg_1.jpg);">
+					   		<div class="overlay-gradient"></div>
+					   		<div class="container-fluid">
+					   			<div class="row">
+						   			<div class="col-md-10 col-md-offset-1 slider-text">
+						   				<div class="slider-text-inner">
+						   					<h1>Do Plants Need Water?</h1>
+												<h2>Watering the garden before a drought sets in keeps the soil's moisture levels up and helps prevent a water deficit.</h2>
+												
+						   				</div>
+						   			</div>
+						   		</div>
+					   		</div>
+					   	</li>
+					   	<li style="background-image: url(images/img_bg_2.jpg);">
+					   		<div class="overlay-gradient"></div>
+					   		<div class="container-fluid">
+					   			<div class="row">
+						   			<div class="col-md-10 col-md-offset-1 slider-text">
+						   				<div class="slider-text-inner">
+						   					<h1>How to Save Water in Your Garden?</h1>
+												<h2>Water Pots in the Afternoon and your Garden in the Morning</h2>
+												
+						   				</div>
+						   			</div>
+						   		</div>
+					   		</div>
+					   	</li>
+					   	<li style="background-image: url(images/img_bg_3.jpg);">
+					   		<div class="overlay-gradient"></div>
+					   		<div class="container-fluid">
+					   			<div class="row">
+						   			<div class="col-md-10 col-md-offset-1 slider-text">
+						   				<div class="slider-text-inner">
+						   					<h1>Check Weather and Soils</h1>
+												<h2>consider your climate, location and the season</h2>
+												<p class="ct"><a href="#">Learn More <i class="icon-arrow-right"></i></a></p>
+						   				</div>
+						   			</div>
+						   		</div>
+					   		</div>
+					   	</li>		   	
+					  	</ul>
+				  	</div>
+				</div>
+				<div class="col-md-4">
+					<a href="#" class="featured text-center animate-box" style="background-image: url(images/img_bg_3.jpg);">
+						<div class="desc">
+							<span class="date">Dec 25, 2016</span>
+							<h3>Every Start has an End</h3>
+							<span class="category">Inspirational</span>
+						</div>
+					</a>
+					<a href="#" class="featured text-center animate-box" style="background-image: url(images/img_bg_2.jpg);">
+						<div class="desc">
+							<span class="date">Dec 25, 2016</span>
+							<h3>Most Beautiful Website in 2016</h3>
+							<span class="category">Inspirational</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</aside>
+
+	<div id="fh5co-blog-popular">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-12 col-md-offset-0 text-center fh5co-heading">
+					<h2><span>Time to Water Plants</span></h2>
+				</div>
+			</div>
+
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="row animate-box">
+				    <div class="col-md-12 col-md-offset-0 text-center fh5co-heading">
+					    <h2><span id="idTime"></span></h2>
+				    </div>
+			    </div>                
+                <div class="col-md-4"></div>
+            </div>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="fh5co-blog animate-box">
+						<a  href="#"  ><img id="imgPlant1" class="img-responsive" src="images/needwater.jpg" alt=""></a>
+						<div class="blog-text">
+							<Button id="idBtnPlant1"  ><h3>Plant 1</h3></Button>
+							<h5 id="dataPlant1"></h5>
+						</div> 
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="fh5co-blog animate-box">
+						<a href="" onclick="saveData()"><img id="imgPlant2" class="img-responsive" src="images/needwater.jpg" alt=""></a>
+						<div class="blog-text">
+							<Button id="idBtnPlant2"  ><h3>Plant 2</h3></Button>
+                            <h5 id="dataPlant2"></h5>
+						</div> 
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="fh5co-blog animate-box">
+						<a href="" onclick="saveData()"><img id="imgPlant3" class="img-responsive" src="images/watering.jpg" alt=""></a>
+						<div class="blog-text">
+							<Button id="idBtnPlant3"  ><h3>Plant 3</h3></Button>
+                            <h5 id="dataPlant3"></h5>
+						</div> 
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="fh5co-blog animate-box">
+						<a href="" onclick="saveData()"><img  id="imgPlant4" class="img-responsive" src="images/fresh.jpg" alt=""></a>
+						<div class="blog-text">
+							<Button id="idBtnPlant4"  ><h3>Plant 4</h3></Button>
+                            <h5 id="dataPlant4"></h5>
+						</div> 
+					</div>
+				</div>
+			</div>
+            <div class="row">
+				<div class="col-md-4">
+					
+				</div>
+				
+				<div class="col-md-4">
+					<div class="fh5co-blog animate-box">
+						<a href="" onclick="saveData()"><img id="imgPlant5" class="img-responsive" src="images/fresh.jpg" alt=""></a>
+						<div class="blog-text">
+							<Button id="idBtnPlant5"  ><h3>Plant 5</h3></Button>
+                            <h5 id="dataPlant5"></h5>
+                            <label id="dataIDPlant5" style="visibility:hidden"></label>
+						</div> 
+					</div>
+				</div>
+                <div class="col-md-4">
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+
